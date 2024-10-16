@@ -1,7 +1,7 @@
 const CopyToClipBoard = (valuetocopy) => {
     const freelancerInput = document.getElementById('email-freelancer');
     const recrutadorInput = document.getElementById('email-recrutador');
-    
+
     const typeContact = {
         'freelancer': freelancerInput ? freelancerInput.value : null,
         'recrutador': recrutadorInput ? recrutadorInput.value : null

@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faClipboard } from '@fortawesome/free-solid-svg-icons';
 
-// Adiciona ícones à biblioteca
 library.add(faClipboard);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

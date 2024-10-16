@@ -1,29 +1,30 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CopyToClipBoard from '../utils/copy-to-clipboard';
+import Habilidades from "../components/Habilidades";
+import MainContent from "../components/MainContent";
+import Contato from "../components/Contato";
+import Projetos from "../components/Projetos";
+import Trajetoria from "../components/Trajetoria";
 const Main = () => {
     return (
-        <div class='main-content d-flex flex-column align-items-center' style={{ height: '100vh' }}>
-            <div class='main-content-apresentation w-100 h-50 d-flex justify-content-center align-items-center'>
-                <div>
-                    <h5 class='font-weight-bold mb-0'>Bem-vindo!</h5>
-                    <h1 class='font-weight-bold mb-0'>Eu me chamo <span style={{ color: '#483D8B' }}>Gustavo Lohmann Linz</span></h1>
-                    <h5 class='font-weight-bold mb-0'>Desenvolvedor Fullstack</h5>
-                </div>
+        <div>
+            <MainContent />
+            <div className="text-center m-2">
+                <h1 className='font-weight-bold mb-0' style={{ color: "#483D8B" }}>Habilidades</h1>
             </div>
-            <h5>Entre em contato comigo:</h5>
-            <div class="input-group mb-3 w-25">
-                <div class="input-group-prepend">
-                    <div class="input-group-text" onClick={() => CopyToClipBoard('freelancer')} id="btnGroupAddon" style={{ height: '40px'}}><FontAwesomeIcon icon="clipboard" /></div>
-                </div>
-                <input type="text" class="form-control" value="gustavolohmannfreelancer@gmail.com" id="email-freelancer" placeholder="Email (Freelancer): gustavolohmannfreelancer@gmail.com" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+            <Habilidades />
+            <div className="text-center m-2">
+                <h1 className='font-weight-bold mb-0' style={{ color: "#483D8B" }}>Minha Trajetoria</h1>
             </div>
-            <div class="input-group mb-3 w-25" >
-                <div class="input-group-prepend">
-                    <div class="input-group-text"  onClick={() => CopyToClipBoard('recrutador')} id="btnGroupAddon" style={{ height: '40px'}}><FontAwesomeIcon icon="clipboard" /></div>
-                </div>
-                <input type="text" class="form-control" value="gustavolohmannlinz@gmail.com" id="email-recrutador" placeholder="Email (Recrutador): gustavolohmannlinz@gmail.com" aria-label="Input group example" aria-describedby="btnGroupAddon" />
+            <Trajetoria />
+            <div className="text-center m-2">
+                <h1 className='font-weight-bold mb-0' style={{ color: "#483D8B" }}>Projetos</h1>
             </div>
+            <Projetos />
+            <div className="text-center m-2">
+                <h1 className='font-weight-bold mb-0' style={{ color: "#483D8B" }}>Entre em contato comigo</h1>
+            </div>
+            <Contato/>
         </div>
-    )
+
+    );
 }
 export default Main;
