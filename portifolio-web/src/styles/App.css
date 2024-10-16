@@ -1,5 +1,20 @@
 * {
   list-style: none;
   box-sizing: border-box;
+  background-color: #F5F5F5;
 }
 
+:root {
+  --main-tx-color: #333333;
+  /* COR DE FONTE PRINCIPAL */
+  --subtitle-tx-color: #555555;
+  /* COR DE FONTE PARA SUBTITILULOS */
+}
+
+h1 {
+  color: var(--main-tx-color);
+}
+
+h5 {
+  color: var(--subtitle-tx-color)
+}

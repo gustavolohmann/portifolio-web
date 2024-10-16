@@ -7,10 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PortifolioPage/>
+      <PortifolioPage />
       <Footer />
     </div>
   );
 }
-
 export default App;
