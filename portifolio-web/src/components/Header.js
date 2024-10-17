@@ -5,7 +5,9 @@ const Header = () => {
             <ul class='d-flex align-items-center list-unstyled mb-0'>
                 <li class='me-3'><button class='btn border'>01 - Home</button></li>
                 <li class='me-3'><button class='btn border'>02 - Habilidades</button></li>
-                <li><button class='btn border'>03 - Contato</button></li>
+                <li class='me-3'><button class='btn border'>03 - Trajetoria</button></li>
+                <li><button class='btn border'>04 - Projetos</button></li>
+                <li><button class='btn border'>05 - Contato</button></li>
             </ul>
         </div>
     );

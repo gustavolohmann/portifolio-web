@@ -3,6 +3,7 @@ import React from 'react';
 const Habilidades = () => {
     const skills = [
         { name: 'Vue.js', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg' },
+        { name: 'React', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' },
         { name: 'MySQL', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg' },
         { name: 'PHP', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg' },
         { name: 'Express', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg' },
@@ -13,9 +14,9 @@ const Habilidades = () => {
         { name: 'Postman', url: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg' },
     ];
     return (
-        <div className="habilidade-main-content container  d-flex flex-row justify-content-center p-5" style={{ height: "100vh" }}>
+        <div className="habilidade-main-content container  d-flex flex-row align-items-center justify-content-center p-5" style={{ height: "100vh" }}>
             {skills.map((skill, index) => (
-                <div key={index} style={{ display: 'flex', width: '150px', height: '50px', padding: '10px', alignItems: 'center', marginBottom: '10px', border: '2px solid #E0E0E0', borderRadius: '30px' }}>
+                <div key={index} style={{ display: 'flex', width: '150px', height: '50px', padding: '10px', alignItems: 'center', marginBottom: '10px', border: '2px solid #E0E0E0', borderRadius: '10px' }}>
                     <img src={skill.url} alt={skill.name} style={{ width: '40px', height: '40px', marginRight: '10px' }} />
                     <span>{skill.name}</span>
                 </div>
