@@ -9,19 +9,19 @@ const Projetos = () => {
     ];
 
     return (
-        <div class="container d-flex flex-row align-items-center" style={{ height: "100vh" }}>
-            <div class="row">
+        <div className="main-content-projeto container d-flex flex-row align-items-center" style={{ height: "100vh" }}>
+            <div className="row">
                 <div className="text-center p-5">
                     <h1 className='font-weight-bold mb-0' style={{ color: "#483D8B" }}>Projetos</h1>
                 </div>
                 {projetos.map((projeto, index) => (
-                    <div key={index} class="col-md-4 mb-4" >
-                        <div class="card h-100 d-flex flex-column">
-                            <div class="card-body" style={{ backgroundColor: "white" }}>
-                                <h5 class="card-title" style={{ backgroundColor: "white" }}>Projeto: {projeto.nome}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted" style={{ backgroundColor: "white" }}>Empresa Contratante: {projeto.empresa}</h6>
-                                <p class="card-text" style={{ backgroundColor: "white" }}>{projeto.descricao}</p>
-                                <small class="text-muted" style={{ backgroundColor: "white" }}>Tecnologia: {projeto.tecnologia}</small>
+                    <div key={index} className="col-md-4 mb-4" >
+                        <div className="card h-100 d-flex flex-column">
+                            <div className="card-body" style={{ backgroundColor: "white" }}>
+                                <h5 className="card-title" style={{ backgroundColor: "white" }}>Projeto: {projeto.nome}</h5>
+                                <h6 className="card-subtitle mb-2 text-muted" style={{ backgroundColor: "white" }}>Empresa Contratante: {projeto.empresa}</h6>
+                                <p className="card-text" style={{ backgroundColor: "white" }}>{projeto.descricao}</p>
+                                <small className="text-muted" style={{ backgroundColor: "white" }}>Tecnologia: {projeto.tecnologia}</small>
                             </div>
                         </div>
                     </div>

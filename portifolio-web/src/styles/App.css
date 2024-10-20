@@ -15,6 +15,13 @@ h1 {
   color: var(--main-tx-color);
 }
 
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+}
 h2,
 p {
   color: var(--main-tx-color);
@@ -80,10 +87,11 @@ h5 {
   position: absolute;
   width: 6px;
   background-color: white;
-  top: 0;
+  top:  164px;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+ 
 }
 
 /* Container around content */

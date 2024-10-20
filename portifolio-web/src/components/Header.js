@@ -1,13 +1,14 @@
+import  SelectMenu  from '../utils/select-menu';
+
 const Header = () => {
     return (
-        <div class='d-flex justify-content-around align-items-center border' style={{ height: '100px' }}>
-            <h1 class='me-3'>logo</h1>
-            <ul class='d-flex align-items-center list-unstyled mb-0'>
-                <li class='me-3'><button class='btn border'>01 - Home</button></li>
-                <li class='me-3'><button class='btn border'>02 - Habilidades</button></li>
-                <li class='me-3'><button class='btn border'>03 - Trajetoria</button></li>
-                <li class='me-3'><button class='btn border'>04 - Projetos</button></li>
-                <li class='me-3'><button class='btn border'>05 - Contato</button></li>
+        <div className='header d-flex justify-content-around align-items-center border' style={{ height: '100px' }}>
+            <ul className='d-flex align-items-center list-unstyled mb-0'>
+                <li className='me-3'><button onClick={() => SelectMenu("home")} className='btn border home'>01 - Home</button></li>
+                <li className='me-3'><button onClick={() => SelectMenu("habilidade")} className='btn border habilidade'>02 - Habilidades</button></li>
+                <li className='me-3'><button onClick={() => SelectMenu("trajetoria")} className='btn border trajetoria'>03 - Trajetoria</button></li>
+                <li className='me-3'><button onClick={() => SelectMenu("projeto")} className='btn border projeto'>04 - Projetos</button></li>
+                <li className='me-3'><button onClick={() => SelectMenu("contato")} className='btn border contato'>05 - Contato</button></li>
             </ul>
         </div>
     );

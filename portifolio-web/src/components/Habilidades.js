@@ -15,7 +15,10 @@ const Habilidades = () => {
     ];
 
     return (
-        <div className="habilidade-main-content container d-flex flex-wrap justify-content-center align-items-center p-5" style={{ minHeight: "100vh" }}>
+        <div className="habilidade-main-content container d-flex flex-wrap justify-content-center align-items-center p-5 " style={{ minHeight: "100vh" }}>
+            <div className="text-center w-100 m-2">
+                <h1 className='font-weight-bold mb-0' style={{ color: "#483D8B" }}>Habilidades</h1>
+            </div>
             {skills.map((skill, index) => (
                 <div key={index} style={{
                     display: 'flex',
@@ -30,7 +33,7 @@ const Habilidades = () => {
                     borderRadius: '10px',
                     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
                     transition: 'transform 0.2s',
-                    backgroundColor: '#fff',
+                    
                 }}
                     className="skill-card"
                     onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
