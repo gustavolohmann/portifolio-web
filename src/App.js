@@ -6,7 +6,7 @@ import './styles/App.css';
 
 function App() {
   
-  document.title = "Portifolio - Gustavo Lohmann Linz";
+  document.title = "Portfólio - Gustavo Lohmann Linz";
   
   return (
     <div className="App">
