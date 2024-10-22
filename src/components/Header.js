@@ -3,6 +3,7 @@ import  SelectMenu  from '../utils/select-menu';
 const Header = () => {
     return (
         <div className='header d-flex justify-content-around align-items-center border' style={{ height: '100px' }}>
+            <link rel="icon" href="" type="image/x-icon" />
             <ul className='d-flex align-items-center list-unstyled mb-0'>
                 <li className='me-3'><button onClick={() => SelectMenu("home")} className='btn border home'>01 - Home</button></li>
                 <li className='me-3'><button onClick={() => SelectMenu("habilidade")} className='btn border habilidade'>02 - Habilidades</button></li>

@@ -3,10 +3,15 @@ import Footer from './components/Footer';
 import PortifolioPage from './pages/portifolio-page';
 import './styles/App.css';
 
+
 function App() {
+  
+  document.title = "Portifolio - Gustavo Lohmann Linz";
+  
   return (
     <div className="App">
       <Header />
+      
       <PortifolioPage />
       <Footer />
     </div>
